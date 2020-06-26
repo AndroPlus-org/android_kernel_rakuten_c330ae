@@ -114,7 +114,7 @@ esac
 done
 
 make_kernel
-make_dtb
+#make_dtb
 make_modules
 make_boot
 make_zip
