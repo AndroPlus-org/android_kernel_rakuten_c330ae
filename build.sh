@@ -60,7 +60,7 @@ function make_dtb {
 }
 
 function make_boot {
-		cp -vr $ZIMAGE_DIR/Image.gz ${REPACK_DIR}/zImage
+		cp -vr $ZIMAGE_DIR/Image.gz-dtb ${REPACK_DIR}/zImage
 }
 
 
@@ -114,7 +114,7 @@ esac
 done
 
 make_kernel
-#make_dtb
+make_dtb
 make_modules
 make_boot
 make_zip
